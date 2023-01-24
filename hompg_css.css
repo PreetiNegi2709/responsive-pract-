@@ -25,45 +25,49 @@
 }
 .menu{
     width: 100%;
-    position: absolute;
+    position: static;
     background-color: rgb(255, 158, 120);
+    display: flex; justify-content: space-between; 
+    align-items: center;
 }
 .left_menu{
-    width: 40%; height: 7vh;
     float: left;
+    margin-left: 10%;
 }
 .right_menu{
-    width: 60%;
-    float: left;
-
+    /* float: left;  */
+    display: flex; margin-right: 10%;
 }
 .logo{
     height: 10vh;
 }
 .menu li{
     float: right; 
-    font-weight: 600; color: white;
+    font-weight:400; color: white;
     letter-spacing: 0.1rem;
     /* background-color: aqua; */
-    margin: 1rem; padding: 0.1rem; 
+    margin: 1rem; 
     margin-right: 1rem;
 }
 /* ___________________________________________________________ */
+
 .content{
-    height: 70vh;
+    height: 50vh; width: 80vw; margin: auto;
     background-color: brown;
+    display: flex; /* bov hori aa jaege theeno */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.l_c{
-    height: auto; width: 40%;
-    background-color: red;
-    float: left;
+.cont_box{
+    width: 20vw; height: 50vh; background-color: lightslategrey;
+    flex:1 1 200px; 
 }
-.r_c{
-    height: auto; width: 40%;
-    background-color: green;
-    float: left;
+.cont_box:first-child{
+    background-color: aqua;
 }
-/* .footer{
-    height: 7vh; width: auto;
-    background-color: aquamarine;
-} */
+.cont_box:last-child{
+    background-color: lightcoral;
+}
+@media (max-width:500px) {
+    .container{height: auto;}
+}
