@@ -1,0 +1,69 @@
+.container{
+    height: 300vh; width: auto;
+    background-color: antiquewhite;
+}
+.header{
+    height:50vh; width: auto;
+    background-color: lightpink;
+    overflow: hidden;
+    display: flex; align-items: center; 
+}
+.header::before{
+  content: ""; 
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 50vh; 
+  background-color: hsla(0, 0%, 100%, 0.571); 
+  z-index: 1; 
+}
+#header_img{
+    height: auto; min-height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+.menu{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(255, 158, 120);
+}
+.left_menu{
+    width: 40%; height: 7vh;
+    float: left;
+}
+.right_menu{
+    width: 60%;
+    float: left;
+
+}
+.logo{
+    height: 10vh;
+}
+.menu li{
+    float: right; 
+    font-weight: 600; color: white;
+    letter-spacing: 0.1rem;
+    /* background-color: aqua; */
+    margin: 1rem; padding: 0.1rem; 
+    margin-right: 1rem;
+}
+/* ___________________________________________________________ */
+.content{
+    height: 70vh;
+    background-color: brown;
+}
+.l_c{
+    height: auto; width: 40%;
+    background-color: red;
+    float: left;
+}
+.r_c{
+    height: auto; width: 40%;
+    background-color: green;
+    float: left;
+}
+/* .footer{
+    height: 7vh; width: auto;
+    background-color: aquamarine;
+} */
