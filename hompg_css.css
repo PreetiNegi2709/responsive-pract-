@@ -60,7 +60,7 @@
 }
 .cont_box{
     width: 20vw; height: 50vh; background-color: lightslategrey;
-    flex:1 1 200px; 
+    flex:1 1 300px; 
 }
 .cont_box:first-child{
     background-color: aqua;
